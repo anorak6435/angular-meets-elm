@@ -1,0 +1,24 @@
+<h1>Angular + ELM</h1>
+
+<article>Prototype showing interoperability between Elm & Angular</article>
+
+<div class="content">
+  <section>
+    <h2>Elm component:</h2>
+    <div id="elm-component"></div>
+  </section>
+
+  <section>
+    <h2>Angular component:</h2>
+    <div>
+      <h3>Messages from Elm:</h3>
+      <ul>
+        <li *ngFor="let message of messages">{{message}}</li>
+      </ul>
+      <div>
+        <input #msg placeholder="Type text">
+        <button (click)="send(msg)">Send to Elm</button>
+      </div>
+    </div>
+  </section>
+</div>
